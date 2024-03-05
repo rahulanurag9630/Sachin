@@ -1,50 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Full Screen Image</title>
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- Add custom CSS for full-screen image -->
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>W.Pencilwala</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-        .full-screen-image {
-            background: url('card1.png') center/cover no-repeat;
-            height: 100vh;
-            width: auto;
+  <style>
+    .container1 {
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+    .dropdown {
+      width: fit-content;
+      height: fit-content;
+      float: right;
+      margin-right: 10px;
+      top: 8px;
+    }
+    .strong {
+      white-space: nowrap;
+      float: right;
+      margin-top: 12px;
+      margin-left: 5px;
+      text-decoration: solid;
+    }
+    .btnx {
+      margin-top: 10px;
+      float: right;
+      margin-left: 10px;
+    }
+
+    .btny {
+      margin-top: 12px;
+      float: right;
+      margin-left: 50px;
+    }
+    .div2 {
+      width: auto;
+      height: auto;
+      text-align: center;
+      
+    }
+
+    .image {
+      justify-content: center;
+      align-items: center;
+      height: 300px; /* Set a specific height for the container if needed */
+      margin-left: 100px;
+  
+
+    }
+
+    .img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      
+    }
+
+    .text1 {
+      font-size: 40px;
+      margin-left: 20px;
+    }
+
+    .card {
+      width: 50%;
+      height: 90px;
+      border: 2px solid #ffc0cb; /* Border color */
+      border-radius: 15px; /* 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      background-color: #ffc0cb;
+      display: flex;
+      margin-left: 10vw;
+      margin-top: 4vh;
+    }
+
+ #maindiv{
+  display: flex;
+  flex-wrap: wrap;
+height: auto;
+  width: 100vw;
+  align-items: center ;
+  justify-content: center;
+ }
+ .buttons{
+  display: flex !important;
+  width: 250px;
+  height: 50px;
+  border:     1px solid black;
+  margin-right: 20px;
+  border-radius: 25px;
+  flex-wrap: wrap;
+  margin: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .s{
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px dotted #ddd; /* Add border only below cells */
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+
+    table {
+      width: 100%;
+      position: relative;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+
+    .fixedfootar{
+      width: 60vw;
+      height: 10vh;
+      border: 1px solid black;
+      border-radius: 35px;
+      margin-left: 250px;
+     margin-bottom: 20px;
+     background-color: #808080;
+     align-items: center;
+      
+    }
+
+    .hiii{
+      border: 1px  solid black;
+    }
+
+    .lastf {
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Display the list items in a horizontal line */
+    }
+
+    li {
+      margin-right: 40px;
+      width: 20vw; /* Adjust the margin as needed */
+      height: 5;
+      margin: 10px;
+    }
+  a{
+   text-decoration: none;
+   color: white;
+  }
+ .image-and-text {
             display: flex;
             align-items: center;
+            text-align: center;
             justify-content: center;
-        }
-        button{
-            background-color:transparent;
-            opacity: 0;
-            cursor: pointer;
-            position: absolute;
-            left: 6%;
-            top: 50;
-            height: 10vh;
-            width: 3vw;
-        }
-    </style>
-</head>
-<body>
 
-    <div class="container-fluid full-screen-image">
-        <!-- You can add additional content or elements here if needed -->
-        <button class=""><a href="main.html">light</a></button>
+        }
 
+            /* dotline containe */
+            .dotted-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjust as needed */
+    /* flex-wrap: wrap; */ /* You may or may not need flex-wrap based on your design */
+}
+
+.dotted-line {
+    height: 8vh;
+    border-bottom: 1px dotted #000;
+    margin: 0 20px;
+    width: 100%;
+}
+
+
+/* Add styles for the default and scrolling navbars */
+.default-navbar {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: 0%;
+    z-index: 1;
+}
+
+.scroll-navbar {
+    display: none;
+    color: #333; /* Change text color as needed */
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.navbar1 {
+    background-color: #f8f5f5;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    width: 150%;
+    margin-top: -40px
+    ; /* Initially hide the navbar above the viewport */
+    transition: top .3s;
+}
+
+.navbar1 a {
+  background-color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+}
+  </style>
+      <script>
+        // Function to toggle between default and scrolling navbars on scroll
+window.onscroll = function() {
+    const defaultNavbar = document.querySelector('.default-navbar');
+    const scrollNavbar = document.querySelector('.scroll-navbar');
+    
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        defaultNavbar.style.display = 'none';
+        scrollNavbar.style.display = 'block';
+    } else {
+        defaultNavbar.style.display = 'block';
+        scrollNavbar.style.display = 'none';
+    }
+};
+
+      </script>
+  <body>
+    
+      <!-- // that is bottom navigation -->
+    <nav class="nav nav-pills flex-column flex-sm-row fixed-bottom fixedfootar">
+    
+      <span style="height: 30px; width: 90px; border-radius: 10px; border: solid rgb(250, 233, 1) 1px;  background-color: rgb(158, 152, 152); margin: 20px; text-align: center;"><a href="#creator">Creator</a></span>
+      <span style="height: 30px; width: 150px; border-radius: 10px; border: solid rgb(250, 233, 1) 1px; background-color: rgb(158, 152, 152); margin: 20px; text-align: center;"><a href="#font-color">Font & color</a></span>
+      <span style="height: 30px; width: 60px; border-radius: 10px; border: solid rgb(250, 233, 1) 1px;  margin: 20px; text-align: center;"><a href="#detail">Detail</a></span>
+      <span style="height: 30px; width: 90px; border-radius: 10px; border: solid rgb(250, 233, 1) 1px; margin: 20px;text-align: center;"><a href="#elements">Elements</a></span>
+      <span style="height: 30px; width: 60px; border-radius: 10px; border: solid rgb(250, 233, 1) 1px; margin: 20px; text-align: center;"><a href="#score">Score</a></span>
+      <span style="height: 30px; width: 150px; border-radius: 10px; border: solid rgb(250, 233, 1) 1px; margin: 20px; text-align: center;"><a href="INDEX.HTML">Visit Site</a></span>
+    </nav>
+
+    <div class="scroll-navbar" id="scroll-navbar">
+      <div class="navbar1" id="navbar">
+        <span style="float: left; margin-left: 10px;">Pencilvania    by   Stutpak     
+        
+        </span>
+        <div>
+          <span> Sponsored by
+            Webflow <img src="pngwing.com (2).png" alt="" height="20px" width="20px" style="color: #f2f2f2; margin-left: 10px;"></span>
+            <img src="pngwing.com (1).png" alt="" height="20px" width="20px" tyle="color: #f2f2f2; margin-left: 15px;">
+        </div>
+        
+    </div>  
+  </div>
+
+    
+<section id="creator">
+      <!-- that is a search bar code -->
+      <div class="default-navbar">
+        <div class="container1">
+          <div class="container">
+            <nav class="navbar navbar-light bg-">
+              <form class="container-fluid">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">W</span>
+                  <input
+                    type="text"
+                    class="form-control w-30"
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </form>
+            </nav>
+          </div>
+          <!-- that is a dropdown code  -->
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="dropdownMenuButton2"
+            >
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <p class="strong">Log in</p>
+          <p class="strong">Sign up</p>
+    
+          <button type="button" class="btn btn-dark btnx" style="width: 100px; height: 40px; border-radius: 10px;">Be Pro</button>
+          <button type="button" class="btn btn-outline-secondary btny" style="margin-right: 40px; width: 250px; height: 70px; border-radius: 15px;">
+            Submit  Website
+          </button>
+        </div>    </div>
+
+
+         <!-- //  in the line uper code is over all for   for the navigation bar -->
+  
+           
+         
+        <div style="margin-top: 20px;">
+          <img src="pngwing.com (1).png" alt="" height="30px" width="30px" style="float: right; margin-right: 25px;">
+          <img src="pngwing.com (2).png" alt=""height="30px" width="30px" style="float: right; margin-right: 15px;">
+        </div>
+  
+  
+      <div class="div2">
+        <p style="margin-left: 80px;">Honorable Mention - Mar 1, 2021</p>
+  
+        <b style="font-size: 70px; color:black">PENCILVANIA</b>
+        <div class="image-and-text">
+          <img src="stupak.jpg"  style=" width: 30px; height: 30px; margin-top: -15px;" alt="Stupak Image">
+          <p><b>Sutpak</b></p>
+      </div>
+  
+         
+        </div>
+      </div>
+  
+  
+    
+      <!-- // that is div for the image -->
+      <div class="image container">
+        <img src="first.png" alt="first image" width="100%" class="img" />
+  
+        <!-- // test -->
+        <div class="text1" style="text-align: center; font-weight: 300;">
+          <p style="margin-top: 70px;">
+            Every day, a huge amount of dogs become available for
+            adoption. The newest ones are put on display in this little town
+            
+            to give them extra attention and hopefully a (new) home soon.
+          </p>
+        </div>
+      </div>
+</section>
+
+    <!-- // that is gap spacing content -->
+    <div style="margin-top: 1100px; margin-left: 15px">
+      <p style="margin-left: 25px">Elements</p>
     </div>
 
-    <!-- Add Bootstrap JS and Popper.js (if needed) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <div>
+      <p style="font-size: 40px; margin-left: 35px">
+        Keep the focus in <br />
+        these elements.
+      </p>
+    </div>
 
-</body>
+    <!-- /// second image for rhe page -->
+
+    <section id="elements">
+      <div style="display: flex;flex-wrap: wrap;">
+        <div>
+          <img
+          src="card2.png"
+          alt="image not found"
+          style="
+            height: 70vh;
+            width: 90vh;
+            border-radius: 10px;
+            margin-left: 40px;
+          "
+        />
+        <center><p style="margin-top:40px ;">Mobile  Screenshot  <b>from</b>  <u>Mobile Thumbnail</u> </p></center>
+        </div>
+       <div>
+        <img
+        src="card1.png"
+        alt="image not found"
+        style="height: 70vh; width: 90vh; border-radius: 10px; margin-left: 30px;"
+      />
+    <center>  <p style="margin-top: 40px; ">Desktop Screenshot <b>from</b> <u>Desktop Thumbnail</u></p></center>
+       </div>
+      </div>
+    </section>
+  
+           <span style="margin-left: 50px;">
+            <p></p>
+            <p></p>
+           </span>
+            
+           
+
+    <!-- // dv fro the doted line -->
+    <div class="dotted-container">
+      <div style="width: 40%;">
+          <div class="dotted-line">
+              <b>Color Palette</b>
+          </div>
+          <div class="card">
+              <p style="text-align: center; margin-top: 20px; color: #f2f2f2;">HEX #FF9398</p>
+          </div>
+      </div>
+  
+      <!-- Add additional content or space as needed -->
+      <div style="width: 40%;">
+          <div class="dotted-line"><b>Typography</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Laila</b></div>
+          <span style="font-size: 5em; font-family: 'Playfair Display', serif;">
+             Laila
+          </span>
+      </div>
+  </div>
+  
+
+
+
+
+
+    
+    <!-- // div for  the   card -->
+    <section id="font-color" >
+       
+    
+
+
+      
+  
+    </section>
+    <div style="margin-top: 260px;">
+      <p style="text-align: center; font-size: 25px;">This website has been created using...</p>
+    </div>
+
+    <!-- //   that is a main div for the buttons with border -->
+        <section id="detail">
+          <div  id="maindiv">
+            <span class="buttons">Art & Illustration</span>
+            <span class="buttons">Web & Interactive</span>
+            <span class="buttons">Animation</span>
+            <span class="buttons">Colorful</span>
+            <span class="buttons">lllustration</span>
+            <span class="buttons">Data Visulization</span>
+            <span class="buttons">Storytelling</span>
+            <span class="buttons">Gusters/intraction</span>
+            <span class="buttons" ">Canvas  Apiu</span>
+          </div>
+             
+        </section>
+               <!-- // div for the table -->
+
+         <section id="score">
+          <div style="margin-top: 200px;">
+
+            <table>
+              <thead>
+                <tr>
+                  <th class="s">Votes (15/69)</th>
+                  <th class="s">Community Members</th>
+                  <th class="s">Design</th>
+                  <th class="s">Usability</th>
+                  <th class="s">Creativity</th>
+                  <th class="s">Content</th>
+                  <th class="s"> Overall</th>
+                </tr>
+              </thead>
+              <tbody>
+              
+              <!--  rows as 1 -->
+                <tr>
+                  <td class="s"></td>
+                  <td class="s">Darko Stanimirov * from Serbia
+          dstanimirov.com</td>
+                  <td class="s">10</td>
+                  <td class="s"> </td>
+                  <td class="s"> 10</td>
+                  <td class="s">10</td>
+                  <td class="s">9.40</td>
+                </tr>
+                <!--  rows as 2 -->
+                
+                 <tr>
+                  <td class="s"></td>
+                  <td class="s">Zajno from United States
+          zajno.com</td>
+                  <td class="s">5</td>
+                  <td class="s"> 4</td>
+                  <td class="s">5</td>
+                  <td class="s"> 6</td>
+                  <td class="s">5.7</td>
+                </tr>
+                   <!-- rows as 3 -->
+                
+                 <tr>
+                  <td class="s"></td>
+                  <td class="s"> cUPQODE from United States
+          upqode.com</td>
+                  <td class="s">7</td>
+                  <td class="s">8</td>
+                  <td class="s">7</td>
+                  <td class="s">8</td>
+                  <td class="s">7.40</td>
+                </tr>
+                
+                   <!-- rows as 4 -->
+                
+                 <tr>
+                  <td class="s"> </td>
+                  <td class="s">Ocitocine from France
+          ocitocine.com</td>
+                  <td class="s">8</td>
+                  <td class="s">9</td>
+                  <td class="s">9</td>
+                  <td class="s">8</td>
+                  <td class="s">8.50</td>
+                </tr>
+                
+                
+                 <!--rows as 5 -->
+                
+                 <tr>
+                  <td class="s"></td>
+                  <td class="s">PopArt Studio from United States
+          popwebdesign.net</td>
+                  <td class="s">7</td>
+                  <td class="s">6</td>
+                  <td class="s">8</td>
+                  <td class="s"> 6</td>
+                  <td class="s">6.50</td>
+                </tr>
+                
+                
+                
+                 <!-- rows as 6 -->
+                
+                 <tr>
+                  <td class="s"></td>
+                  <td class="s">Reksa from Indonesia
+          reksaandhika.com</td>
+                  <td class="s">9</td>
+                  <td class="s">6</td>
+                  <td class="s">10</td>
+                  <td class="s">4</td>
+                  <td class="s">7.80</td>
+                </tr>
+                
+                
+                 <!-- rows as 7 --> 
+                
+                 <tr>
+                  <td class="s"></td>
+                  <td class="s">Vladimir Krajcovic * from Slovakia
+          naum.studio</td>
+                  <td class="s">3</td>
+                  <td class="s"> 4</td>
+                  <td class="s"> 5</td>
+                  <td class="s"> 6</td>
+                  <td class="s"> 7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+         </section>
+           <H2 style="margin-top: 20px; margin-left: 20px;">W</H2>
+
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Website</th>
+            <th>Academic</th>
+            <th>Directory</th>
+            <th>FAQS</th>
+          </tr>
+        </thead>
+        
+        <thead>
+          <tr>
+            <th>Collection</th>
+            <th>Jobs</th>
+            <th>Confrences</th>
+            <th>About Us</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <b>Contact Us</b></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+         <hr>
+    <div class="lastf">
+      <ul style="margin-left: 100px;">
+        <li>Cookies Policy</li>
+        <li>Legally Terms</li>
+        <li>Privacy Policies</li>
+      </ul>
+      <ul style="margin-left: 265px;">
+        <li><b>:Connect</b></li>
+        <li>Instagram</li>
+        <li>Linkend</li>
+        <li>Twiter</li>
+        <li>Facebook</li>
+        <li>Tik-Tok</li>
+        <li>You-tube</li>
+      </ul>
+    </div>
+ 
+
 </html>
